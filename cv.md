@@ -30,3 +30,41 @@ I am confident that my ability to learn will lead me to become an experienced Fr
 -   Gulp
 -   VS Code, IntelliJ IDEA
 -   Adobe Photoshop, Figma (basic)
+
+---
+
+### Code example:
+
+**[Does my number look big in this?](https://www.codewars.com/kata/5287e858c6b5a9678200083c/javascript) from CODEWARS:**  
+A _Narcissistic Number_ is a positive number which is the sum of its own digits, each raised to the power of the number of digits in a given base. In this Kata, we will restrict ourselves to decimal (base 10).
+
+```Js
+function narcissistic(value) {
+  let temp = value.toString().split(''),
+      sum = 0;
+
+  temp.forEach((elem, index, array) => { sum += elem ** array.length; });
+
+  return sum == value ? true : false;
+}
+```
+
+---
+
+### Education:
+
+-   Khmelnytskyi National University, Computer Engineering
+-   Khmelnitsky Polytechnic College, Programming
+-   Courses:
+    -   HTML and CSS, Stfalcon IT Academy
+    -   JavaScript Fundamentals, SoftServe IT Academy
+    -   JavaScript on [learn.javascript.ru](https://learn.javascript.ru/)
+    -   JavaScript/Front-end. Stage 0, RS School (in progress)
+
+---
+
+### Languages:
+
+-   English - Pre-Intermediate
+-   Russian - Native
+-   Ukrainian - Intermediate

@@ -31,17 +31,21 @@
       <section class="main__section profile">
         <h1 class="visually-hidden">Palchyn Volodymyr - Beginner Frontend Developer</h1>
         <div class="container profile__container">
-          <h2 class="profile__title title">Beginner Frontend Developer</h2>
-          <div class="profile__img-wrap">
-            <img src="assets/img/my-foto.jpg" class="profile__img" alt="Palchyn Volodymyr" />
+          <div class="profile__hero">
+            <h2 class="profile__title">Beginner Frontend Developer</h2>
+            <div class="profile__img-wrap">
+              <img src="assets/img/my-foto.jpg" class="profile__img" alt="Palchyn Volodymyr" />
+            </div>
           </div>
-          <div class="profile__description">
-            <h3>Hi, I’m Volodymyr. Nice to meet you.</h3>
-            <p>
-              I can be persistent and learn quickly, willing to learn and grow as a professional and achieve my goals,
-              plan my time and find common ground with people. Avoidance and conflict adjustments and hard-working.
-            </p>
-            <p>I am confident that my ability to learn will lead me to become an experienced Frontend Developer.</p>
+          <div class="profile__about">
+            <div class="profile__description">
+              <h3>Hi, <span class="profile__name">I’m Volodymyr</span>. Nice to meet you.</h3>
+              <p>
+                I can be persistent and learn quickly, willing to learn and grow as a professional and achieve my goals,
+                plan my time and find common ground with people. Avoidance and conflict adjustments and hard-working.
+              </p>
+              <p>I am confident that my ability to learn will lead me to become an experienced Frontend Developer.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -93,16 +97,24 @@
       <section id="skills" class="main__section skills">
         <div class="container skills__container">
           <h2 class="skills__title title">Skills</h2>
-          <ul class="skills__list list-reset">
-            <li class="skills__item">HTML5, Pug(Jade)</li>
-            <li class="skills__item">CSS3, SASS/SCSS</li>
-            <li class="skills__item">JavaScript (ES6+, DOM, JSON, AJAX)</li>
-            <li class="skills__item">npm, Node.js (basic)</li>
-            <li class="skills__item">Git, GitHub</li>
-            <li class="skills__item">Gulp</li>
-            <li class="skills__item">VS Code, WebStorm</li>
-            <li class="skills__item">Adobe Photoshop, Figma (basic)</li>
-          </ul>
+          <div class="skills__wrapper">
+            <div class="skills__list-container">
+              <ul class="skills__list list-reset">
+                <li class="skills__item">HTML5, Pug(Jade)</li>
+                <li class="skills__item">CSS3, SASS/SCSS</li>
+                <li class="skills__item">JavaScript (ES6+, DOM, JSON, AJAX)</li>
+                <li class="skills__item">npm, Node.js (basic)</li>
+              </ul>
+            </div>
+            <div class="skills__list-container">
+              <ul class="skills__list list-reset">
+                <li class="skills__item">Git, GitHub</li>
+                <li class="skills__item">Gulp</li>
+                <li class="skills__item">VS Code, WebStorm</li>
+                <li class="skills__item">Adobe Photoshop, Figma (basic)</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
       <section id="edu" class="main__section edu">
@@ -111,12 +123,14 @@
             <h2 class="edu__title title">Educational institutions</h2>
             <ul class="edu__list list-reset">
               <li class="edu__item">
-                <p class="edu__time">09.2004 - 06.2006</p>
-                <h3 class="edu__institution">Khmelnytskyi National University, Computer Engineering</h3>
+                <p class="edu__time">09.2001 - 06.2004</p>
+                <h3 class="edu__institution">Khmelnitsky Polytechnic College</h3>
+                <p>Programming</p>
               </li>
               <li class="edu__item">
-                <p class="edu__time">09.2001 - 06.2004</p>
-                <h3 class="edu__institution">Khmelnitsky Polytechnic College, Programming</h3>
+                <p class="edu__time">09.2004 - 06.2006</p>
+                <h3 class="edu__institution">Khmelnytskyi National University</h3>
+                <p>Computer Engineering</p>
               </li>
             </ul>
           </div>
@@ -141,7 +155,7 @@
           <ul class="projects__list list-reset">
             <li class="projects__item">
               <a class="projects__link" href="http://www.grandpalace.km.ua/" target="_blank">
-                <img class="projects__img" src="assets/img/grandpalace.png" alt="Grand Palace - modern housing in the city of Khmelnytsky" />
+                <img class="projects__img" src="assets/img/grandpalace.jpg" alt="Grand Palace - modern housing in the city of Khmelnytsky" />
                 <div class="projects__content">
                   <h3 class="projects__title">Grand Palace - real estate</h3>
                   <p class="projects__description">Several pages. Used: Gulp, Pug, Sass, JS</p>
@@ -150,7 +164,7 @@
             </li>
             <li class="projects__item">
               <a class="projects__link" href="https://drdramen.github.io/softserve-js-project/" target="_blank">
-                <img class="projects__img" src="assets/img/fayni-remeni.png" alt="Fayni Remeni" />
+                <img class="projects__img" src="assets/img/fayni-remeni.jpg" alt="Fayni Remeni" />
                 <div class="projects__content">
                   <h3 class="projects__title">Catalog of goods, basket - educational project</h3>
                   <p class="projects__description">Used: Gulp, HTML, SCSS, JS (a lot of functionality)</p>

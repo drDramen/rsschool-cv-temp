@@ -321,16 +321,176 @@ a {
   background-color: #8428f8;
 }
 
+.edu__item-wrapper {
+  padding: 0 10px;
+}
+
 .edu__list {
   display: flex;
-  justify-content: center;
+  padding: 0 50px;
 }
 
 .edu__item {
-  flex: 0 0 30%;
+  position: relative;
+  display: flex;
+  flex-basis: 25%;
+}
+
+.edu__item::after {
+  content: '';
+  position: absolute;
+  top: 44px;
+  left: 10%;
+  width: 85%;
+  height: 1px;
+  background-color: #e5ebf2;
+}
+
+.edu__item:last-child::after {
+  width: 60%;
 }
 
 .edu__time {
-  margin-bottom: 15px;
+  position: relative;
+  margin-bottom: 30px;
   font-size: 20px;
+}
+
+.edu__time::after {
+  content: '';
+  position: absolute;
+  bottom: -23px;
+  left: 0px;
+  width: 9px;
+  height: 9px;
+  border-radius: 100%;
+  background-color: #8428f8;
+  transform: translateY(-50%);
+}
+
+.lang__container {
+}
+
+.lang__list {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 50px;
+}
+
+.lang__list-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.lang__list-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 7px;
+  height: 100%;
+  background-color: #8428f8;
+}
+
+.lang__name {
+  font-size: 30px;
+  font-weight: 900;
+  color: #8428f8;
+}
+
+.code pre {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.highlight__fn {
+  color: #2196f3;
+}
+
+.highlight__fn-name {
+  color: #ffc107;
+}
+
+.highlight__var {
+  color: #388e3c;
+}
+
+.highlight__prop {
+  color: #7c4dff;
+}
+
+.contact__list-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts__item {
+  margin-bottom: 20px;
+  color: #141c3a;
+}
+
+.contacts__item p {
+  font-weight: 700;
+}
+
+.contacts__item a {
+  color: #141c3a;
+  font-weight: 400;
+}
+
+.footer {
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #f9fbfd;
+  color: #141c3a;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.links__list {
+  display: flex;
+  align-items: center;
+}
+
+.contacts__item:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.links__item + .links__item {
+  margin-left: 30px;
+}
+
+.footer a {
+  color: inherit;
+  transition: 0.3s ease;
+}
+
+.links__item:hover a {
+  color: #8428f8;
+}
+
+.rsschool path {
+  fill: #141c3a;
+  transition: 0.3s ease;
+}
+
+.rsschool:hover path {
+  fill: #8428f8;
+}
+
+.discord span {
+  font-weight: 400;
 }

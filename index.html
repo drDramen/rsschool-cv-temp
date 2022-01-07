@@ -11,7 +11,8 @@
 
 <body>
   <div class="site-container">
-    <div class="header">
+
+    <header class="header">
       <div class="container header__container">
         <div class="header__logo">Volodymyr Palchyn</div>
         <nav class="header__nav nav">
@@ -26,8 +27,10 @@
           </ul>
         </nav>
       </div>
-    </div>
-    <div class="main">
+    </header>
+
+    <main class="main">
+
       <section class="profile">
         <h1 class="visually-hidden">Palchyn Volodymyr - Beginner Frontend Developer</h1>
         <div class="container profile__container">
@@ -94,6 +97,7 @@
           </ul>
         </div>
       </section>
+
       <section id="skills" class="skills">
         <div class="container skills__container">
           <h2 class="skills__title title">Skills</h2>
@@ -117,6 +121,7 @@
           </div>
         </div>
       </section>
+
       <section id="edu" class="edu">
         <div class="container edu__container">
           <h2 class="edu__title title">Education</h2>
@@ -152,9 +157,10 @@
           </ul>
         </div>
       </section>
+
       <section id="lang" class="lang">
         <div class="container lang__container">
-          <h2 class="lang__title title">Languages</h2>
+          <h2 class="lang__title title visually-hidden">Languages</h2>
           <dl class="lang__list">
             <div class="lang__list-wrapper">
               <dt class="lang__name">English</dt>
@@ -171,6 +177,33 @@
           </dl>
         </div>
       </section>
+
+      <section id="projects" class="main__section projects">
+        <div class="container projects__container">
+          <h2 class="projects__title title">Projects</h2>
+          <ul class="projects__list list-reset">
+            <li class="projects__item">
+              <a class="projects__link" href="http://www.grandpalace.km.ua/" target="_blank">
+                <img class="projects__img" src="assets/img/grandpalace.jpg" alt="Grand Palace - modern housing in the city of Khmelnytsky" />
+                <div class="projects__content">
+                  <h3 class="projects__content-title">Grand Palace - real&nbsp;estate</h3>
+                  <p class="projects__description">Used: Gulp, Pug, Sass, JS. several pages</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a class="projects__link" href="https://drdramen.github.io/softserve-js-project/" target="_blank">
+                <img class="projects__img" src="assets/img/fayni-remeni.jpg" alt="Fayni Remeni" />
+                <div class="projects__content">
+                  <h3 class="projects__content-title">Catalog of goods, basket</h3>
+                  <p class="projects__description">Used: Gulp, HTML, SCSS, JS (a lot of functionality), educational project</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <section id="code" class="code">
         <div class="container code__container">
           <h2 class="lang__title title">Code example</h2>
@@ -249,9 +282,9 @@
         </div>
       </section>
 
-    </div>
+    </main>
 
-    <div class="footer">
+    <footer class="footer">
       <div class="container footer__container">
         <div class="footer__copy">
           <p>&copy; 2022 by Volodymyr Palchyn</p>
@@ -274,10 +307,13 @@
           </li>
         </ul>
       </div>
-    </div>
+    </footer>
 
   </div>
 
+  <button class="link-home" type="button"></button>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
